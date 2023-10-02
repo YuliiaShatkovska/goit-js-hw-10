@@ -38,7 +38,7 @@ function breedSelectedById(breedId) {
     .then(data => {
       const [breed] = data;
       const catsDescr = breed.breeds[0];
-      console.log(breed.breeds[0]);
+
       catInfo.innerHTML = `
       <img src="${breed.url}" alt="${catsDescr.name}"/>
     <h2>${catsDescr.name}</h2>
